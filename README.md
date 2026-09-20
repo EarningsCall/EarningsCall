@@ -2,7 +2,7 @@
 
 **Earnings call transcripts, audio, slide decks, and earnings calendar for 9,000+ public companies. One API.**
 
-EarningsCall provides developers, quants, and researchers with programmatic access to structured earnings call data, delivered within 15 minutes of each call ending.
+EarningsCall provides developers, quants, and researchers with programmatic access to structured earnings call data, with many transcripts available within 15 minutes of each call ending.
 
 ---
 
