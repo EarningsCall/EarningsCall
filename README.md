@@ -31,9 +31,9 @@ pip install --upgrade earningscall
 ```
 
 ```python
-from earningscall import get_company
 from datetime import date
-from earningscall import get_calendar
+
+from earningscall import get_calendar, get_company
 
 company = get_company("aapl")
 transcript = company.get_transcript(year=2026, quarter=2, level=2)
@@ -75,7 +75,7 @@ For full documentation and examples, visit the [API Documentation](https://earni
 
 ## Pricing
 
-Plans start at $60/month. No annual lock-in. 7-day money-back guarantee.
+Plans start at $60/month. No annual lock-in. 7-day money-back guarantee for first purchases only, if requested within 7 days of the initial purchase and fewer than 1,000 API calls have been made.
 
 [View Pricing](https://earningscall.biz/api-pricing)
 
