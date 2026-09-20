@@ -36,9 +36,9 @@ from datetime import date
 from earningscall import get_calendar
 
 company = get_company("aapl")
-transcript = company.get_transcript(year=2026, quarter=2)
+transcript = company.get_transcript(year=2026, quarter=2, level=2)
 
-# Access speaker-level data
+# Access speaker-level data (level=2)
 for speaker in transcript.speakers:
     print(f"{speaker.speaker_info.name} ({speaker.speaker_info.title})")
     print(speaker.text[:200])
@@ -54,6 +54,8 @@ calendar = get_calendar(date(2026, 9, 20))
 for event in calendar:
     print(f"{event.company_name} - Q{event.quarter} {event.year} on: {event.conference_date.astimezone().isoformat()}")
 ```
+
+Speaker-level data (`level=2`) requires a plan that includes Enhanced Transcript Data.
 
 For full documentation and examples, visit the [API Documentation](https://earningscall.biz/api-guide) page. To learn more about transcript data and coverage, see the [Earnings Call Transcripts API](https://earningscall.biz/earnings-transcripts-api) page.
 
